@@ -5,6 +5,8 @@ This is the application that generates the `docs.json` files for our organizatio
 # Example Github Action Deployment.
 
 Make sure the following is in your package.json. During build, `npm run docs` will be called.
+
+`package.json`:
 ```json
     "scripts": {
         "docs": "docgen --source src --custom docs/index.yml --output docs/docs.json",
@@ -15,6 +17,7 @@ Make sure the following is in your package.json. During build, `npm run docs` wi
     }
 ```
 
+`.github/workflows/test.yml`:
 ```yml
 name: Deployment
 on:
