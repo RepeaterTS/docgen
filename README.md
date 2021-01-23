@@ -4,6 +4,15 @@ This is the application that generates the `docs.json` files for our organizatio
 ---
 # Example Github Action Deployment.
 
+Create a orphan branch:
+```sh
+git checkout --orphan docs
+touch README.md
+git add .
+git commit -m "init"
+git push
+```
+
 Make sure the following is in your package.json. During build, `npm run docs` will be called.
 
 `package.json`:
