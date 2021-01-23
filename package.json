@@ -1,0 +1,30 @@
+{
+  "name": "repeaterts-docgen",
+  "version": "0.1.0",
+  "description": "The docs.json generator for repeaterts and related projects.",
+  "main": "src/index.js",
+  "repository": "https://github.com/RepeaterTS/docgen.git",
+  "author": "Jordan Jones <jordpjones@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-config-kashall": "Kashalls/Kashall-Lint"
+  },
+  "dependencies": {
+    "js-yaml": "^4.0.0",
+    "jsdoc-to-markdown": "^6.0.1",
+    "yargs": "^16.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "bin": {
+    "docgen": "src/index.js"
+  },
+  "scripts": {
+    "test": "eslint src && node src --source test/src --custom test/docs/index.yml --output test/docs/docs.json --spaces 2",
+    "test:docs": "node src --source test/src --custom test/docs/index.yml --output test/docs/docs.json --spaces 2",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src"
+  }
+}

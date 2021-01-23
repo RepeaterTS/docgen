@@ -1,1 +1,2 @@
-repeaterts-docgen
+# repeaterts-docgen
+This is the application that generates the `docs.json` files for our organization. While it is replica of [discord.js-docgen](https://github.com/discordjs/docgen). We froze the repo that way breaking changes don't happen. We also implemented some fixes that may be more stable than the current docgen.
